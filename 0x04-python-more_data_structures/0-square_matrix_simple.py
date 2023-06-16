@@ -1,6 +1,3 @@
-0-square_matrix_simple.py
-
-
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     my_new_matrix = matrix.copy() #my new_matrix to preserve the old one
