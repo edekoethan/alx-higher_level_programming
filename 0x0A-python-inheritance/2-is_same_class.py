@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""Defines an inherited list class MyList."""
+"""
+================================
+module with method is_same_class
+================================
+"""
 
 
-class MyList(list):
-    """Implements sorted printing for the built-in list class."""
+def is_same_class(obj, a_class):
+    """Method that return True if an object is an instance of a class"""
 
-    def print_sorted(self):
-        """Print a list in sorted ascending order."""
-        print(sorted(self))
+    return type(obj) is a_class
