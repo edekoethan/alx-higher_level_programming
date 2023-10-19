@@ -45,4 +45,28 @@ Script: 15-only_comedy.sql
 Description: This script lists all Comedy shows in the hbtn_0d_tvshows database. Each record displays tv_shows.title, sorted in ascending order by the show title.
 Task 16: List Shows and Genres
 Script: 16-list_shows_and_genres.sql
-Description: This script lists all shows and all genres linked to those shows in the hbtn_0d_tvshows database. If a show doesn't have a genre, NULL is displayed in the genre column. Each record displays tv_shows.title - tv_genres.name, sorted in ascending order by the show title and genre name.
+Description: This script lists all shows and all genres linked to those shows in the hbtn_0d_tvshows database. If a show doesn't have a genre, NULL is displayed in the genre column. Each record displays tv_shows.title - tv_genres.name, sorted in ascending order by the show title and genre name
+
+
+
+Database Management Scripts Readme (Advanced)
+This repository contains a set of advanced SQL scripts for managing a MySQL database, particularly focusing on tasks related to genres, show ratings, and data retrieval. Each script is documented briefly below.
+
+Task 17: Not My Genre
+Script: 100-not_my_genres.sql
+Description: This script uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter. The tv_shows table contains only one record where title = Dexter. Each record displayed is the name of a genre. Results are sorted in ascending order by the genre name, and it uses a maximum of two SELECT statements.
+Task 18: No Comedy Tonight!
+Script: 101-not_a_comedy.sql
+Description: This script lists all shows without the genre Comedy in the hbtn_0d_tvshows database. The tv_genres table contains only one record where name = Comedy. Each record displayed is the title of a show. Results are sorted in ascending order by the show title, and it uses a maximum of two SELECT statements.
+Task 19: Rotten Tomatoes
+Script: 102-rating_shows.sql
+Description: This script imports the hbtn_0d_tvshows_rate database dump and lists all shows from this database by their rating. Each record displayed includes the show's title and rating sum. Results are sorted in descending order by the rating, and it uses only one SELECT statement.
+Task 20: Best Genre
+Script: 103-rating_genres.sql
+Description: This script imports the hbtn_0d_tvshows_rate database dump and lists all genres in the hbtn_0d_tvshows_rate database by their rating. Each record displayed includes the genre's name and rating sum. Results are sorted in descending order by the rating, and it uses only one SELECT statement.
+These advanced scripts provide valuable insights into genres, ratings, and data analysis in the context of a TV show database. You can use them to explore and analyze data related to TV shows and genres.
+
+
+
+
+.
